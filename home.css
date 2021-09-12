@@ -1,0 +1,203 @@
+
+
+
+
+body
+{ 
+
+	padding:0px;
+	margin:0px;
+	 background-image: url("0101.png");
+  background-color: #cccccc;
+
+
+
+}
+  header
+  {
+	  margin:0px;
+	  
+	  
+	  padding: 1px 1px 0.5px 10px;
+  }
+  form
+  {
+	  width:100%;
+	  height:100px;
+	  
+  }
+  #indicator{
+    width:20px;
+    height:20px;
+    display:block;
+    border-radius:10px;
+}
+.green{
+    background-color:green; 
+    display:block;
+}
+.red{
+    background-color:red;   
+    display:block;
+}
+
+  
+  #chat
+  {
+	  position:absolute;
+      top:10.3%;
+	  right:50%;
+      left:36%;
+	  height:0px;
+	  width:0px;
+  }
+  #profile
+  {
+	  position:absolute;
+      top:10.3%;
+      left:46%;
+	  height:0px;
+	  width:0px;
+  }
+  #exit
+  {  
+      position:absolute;
+      top:10.3%;
+      left:56%;
+	  height:0px;
+	  width:0px;
+  }
+  #name
+  {
+	  position:absolute;
+      top:3.5%;
+      left:2%;
+	  
+	  height:0px;
+	  width:0px;
+  }
+  input
+  {
+	  outline:none;
+	 height:30%;
+  }
+  textarea
+  {
+	  outline:none;
+	  width:40%;
+	  height:80%;
+	  left:60%;
+  }
+  button
+  {  
+      width:100px;
+	  height:30px;
+	  border:none;
+	  background-color:#282828;
+	  color:#fff;
+	  font-family:arial;
+	  font-weight:400;
+	  cursor:pointer;
+  }
+  #top
+  {
+	  width:100%;
+	  
+  }
+  #main
+  {
+	  position:absolute;
+	  top:18%;
+	  left:38%;
+	  height:70px;
+	  opacity: 0.9;
+  }
+  
+  
+ #main1{
+	       position:absolute;
+			background:#fff;
+			top:40%;
+			left:27%;
+			color:black;
+			padding:2%;
+			text-align: center;
+			overflow:auto;
+			width:42%;
+			height:100%;
+			opacity: 0.8;
+	  
+		}
+        #left{
+	         text-align:left;
+			 
+	        position:absolute;
+			top:40%;
+			left:0%;
+			padding:2%;
+			background:#cccccc;
+			 border: 1px solid black;
+			width:22%;
+			overflow:auto;	
+			opacity: 0.8;
+			
+		}
+		
+		#right{
+			
+			position:absolute;
+			top:40%;
+			right:0%;
+			padding:2%;
+			background:#fff;
+			border: 1px solid black;
+			width:22%;
+			overflow:auto;
+			opacity: 0.8;
+		}
+		#posts
+		{ 
+		
+        position:static;
+      
+		width:100%;
+		top:20%;
+		left:2%;
+		
+			
+			
+		}
+		
+		
+search
+{
+	
+	float:left;
+}
+.commentbox
+{
+	text-align:top;
+	width:80%;
+	height:auto;
+	padding:10px;
+	left:10%;
+	margin-bottom:2px;
+	background-color:#fff;
+	border-radius:2px;
+	border: 1px solid black;
+	overflow:auto;
+
+
+}
+#main3
+{
+	width:80%;
+	
+	position:absolute;
+	top:24%;
+	left:12%;
+	opacity: 0.8;
+}
+
+
+

@@ -1,0 +1,101 @@
+#include <iostream>
+using namespace std;
+class ce;
+class cs
+{
+  private:
+  static int a;
+  float b,c;
+  public:
+  static void putvalue();
+
+  cs()
+  {
+    cout<<"defult constructor for cs called\n\n";
+    b=15.50;
+    c=25.50;
+  }
+  cs(float x,float y)
+  {
+    cout<<"parametrized constructor for cs called\n\n";
+    b=x;
+    c=y;
+  }
+  cs(const cs &obj)
+  {
+    cout<<"copy constructor for cs called\n\n";
+    b=obj.b;
+    c=obj.c;
+  }
+  friend void add(cs a,ce b);
+~cs()
+{
+  cout<<"destroctor of cs called\n";
+}
+};
+class ce
+{
+  private:
+  static int a;
+  float b,c;
+  public:
+  static void putvalue();
+  ce()
+  {
+    cout<<"defult constructor of ce called\n\n";
+    b=10.50;
+    c=20.50;
+  }
+  ce(float x,float y)
+  {
+    cout<<"parametrized constructor of ce called\n\n";
+    b=x;
+    c=y;
+  }
+  ce(const ce &obj)
+  {
+    cout<<"copy constructor of ce called\n\n";
+    b=obj.b;
+    c=obj.c;
+  }
+  void add()
+  {
+    cout<<"b+c="<<b+c<<endl;
+  }
+  friend void add(cs a,ce b);
+~ce()
+{
+  cout<<"destroctor of ce called\n";
+}
+};
+int cs::a;
+int ce::a;
+void cs :: putvalue()
+{
+  cout<<"value for static variable for cs=";
+  cin>>a;
+  cout<<"\n\n";
+}
+void ce :: putvalue()
+{
+  cout<<"value for static variable for ce=";
+  cin>>a;
+  cout<<"\n\n";
+}
+void add(cs a,ce b)
+{
+  cout<<"sum of values of b from cs and ce="<<a.b+b.b<<endl;
+   cout<<"sum of values of c from cs and ce="<<a.c+b.c<<endl;
+    cout<<"sum of values of a from cs and ce="<<a.a+b.a<<endl;
+}
+
+int main() {
+  std::cout << "Hello World!\n";
+cs a1,a2(100.33,200.44),a3=a2;
+ce b1,b2(50.88,80.55),b3=b2;
+a1.putvalue();
+b1.putvalue();
+add(a2,b2);
+
+return 0;
+}

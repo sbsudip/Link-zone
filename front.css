@@ -1,0 +1,92 @@
+
+
+ body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background-image: url(image2.jpg);
+
+    background-repeat:	no-repeat;
+	background-size: cover;
+}
+ .register{
+	  width:280px;
+	  position:absolute;
+	  top:60%;
+	  left:60%;
+	  transform: translate(-50%,-50%);   
+	  color:black;
+ }
+ .login-box{
+	  width:300px;
+	  position:absolute;
+	  top:25%;
+	  left:25%;
+	  transform: translate(-50%,-50%);   
+	  color:black;
+ }
+ 
+ .login-box h1{
+	  float:left;
+	  font-size:40px;
+	  border-bottom:2px solid #4caf50;
+	  margin-bottom:25px;
+	  padding:8px 0;
+	  color:white;
+ }
+  .textbox{
+	   width:100%;
+	   overflow:hidden;
+	   font-size:20px;
+	   padding:8px 0;
+	   margin:8px 0;
+	   border-bottom:1px solid #4caf50;
+	   color:black;
+  }
+   .textbox i{
+	   width:26px;
+	   float:left;
+	   text-align:center;
+	   color:black;
+   }
+    .textbox input{
+		border:none;
+		outline:none;
+		background:none;
+		color:white;
+		font-size:18px;
+		width:80%;
+		float:left;
+		margin: 0 10px;
+		color:black;
+	}
+	 .btn{
+		width:100%;
+		font-size:15px;
+		
+		background:#B22222;
+		border: 2px solid #4caf50;
+		color:pointer;
+		margin:12px 0;
+		display:block;
+		transition:.3s;
+	 }
+	 .btn1{
+		width:100%;
+		font-size:15px;
+		background:$3000;
+		border: 2px solid #4caf50;
+		color:black;
+		margin:12px 0;
+		display:block;
+		transition:.1s;
+	 }
+		 .btn1:hover{
+			 color:#B22222;
+		 }
+		 
+		 .btn:hover{
+			 color:#FFD700;
+		 }
+		 
+	
